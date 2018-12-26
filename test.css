@@ -1,0 +1,13 @@
+body{
+  text-align:center;
+  background-color:rgba(125,125,125,0.5);
+}
+header{
+  position:fix;
+  top:0;
+  color:red;
+}
+.main{
+  color:blue;
+}
+
