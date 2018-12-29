@@ -1,17 +1,128 @@
 <DOCTYPE! html>
+<html>
 <head>
   <meta charset="utf-8">
   <title>SamplePage</title>
   <link rel="stylesheet" href="./test.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-<header>
-  <h1>here is header</h1>
-</header>
-<div class="main">
-  <h1>here is main contents</h1>
-</div>
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <div class="logo">
+          <img src="http://www.civillink.net/sozai/images/pics2664.gif">
+        </div>
+        <h4>ロシア語学習サポート</h4>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li class="signup-click">新規登録</li>
+          <li class="login-click">ログイン</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="top">
+      <div class="container">
+        <h1 style="font-size:50px;">здравствуйте!</h1>
+        <h1>ロシア語学習サポートへようこそ！</h1>
+        <h1>あなたもロシア語を学んでみませんか？</h1>
+        <a class="btn signup signup-click">新規登録</a>
+        <a class="btn login login-click">ログイン</a>
+        <!--トップ画像の著作権表記--> 
+        <a class="copyright" href="https://jp.freepik.com/free-photos-vectors/travel">Travel写真Bearfotos - Freepik.comによるデザイン</a>
+      </div>
+    </div>
+    <div class="contents-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h1>このページの提供するコンテンツ</h1>
+          <h1>содержимое этой страницы.</h1>
+        </div>
+        <div class="contents">
+          <div class="content">
+            <div class="content-logo"> <img src="./img/cyrilic.png"> </div>
+           <div class="content-message">
+             <h4>Это кириллица!</h4>
+             <p>まずはロシア語のアルファベットであるキリル文字を学びましょう。ゲーム感覚でキリル文字とその発音を学べます。</p> 
+             <p>※工事中</p>
+             <a href="#" class="btn">キリル文字を学ぶ!</a>
+           </div>
+         </div>
+         <div class="content">
+           <div class="content-logo">
+             <img src="./img/cyrilic.png">
+           </div>
+           <div class="content-message">
+             <p>まずはロシア語のアルファベットであるキリル文字を学びましょう。ゲーム感覚でキリル文字とその発音を学べます。</p> 
+             <a href="#">キリル文字を学ぶ!</a>
+           </div>
+         </div>
+         <div class="content">
+           <div class="content-logo">
+             <img src="./img/cyrilic.png">
+           </div>
+           <div class="content-message">
+             <p>まずはロシア語のアルファベットであるキリル文字を学びましょう。ゲーム感覚でキリル文字とその発音を学べます。</p> 
+             <a href="#">キリル文字を学ぶ!</a>
+           </div>
+         </div>
+         <div class="content">
+           <div class="content-logo">
+             <img src="./img/cyrilic.png">
+           </div>
+           <div class="content-message">
+             <p>まずはロシア語のアルファベットであるキリル文字を学びましょう。ゲーム感覚でキリル文字とその発音を学べます。</p> 
+             <a href="#">キリル文字を学ぶ!</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 <footer>
-  <h1>here is footer</h1>
+  <div class="container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="http://www.civillink.net/sozai/images/pics2664.gif">
+      </div>
+      <h4>Учить русский</h4>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li>Подписаться</li>
+        <li>авторизоваться</li>
+        <li>связаться с нами</li>
+      </ul>
+    </div>
+  </div>
 </footer>
+<div class="signup-modal">
+  <h4>新規登録</h4>
+  <p>Emailアドレス:адрес электронной почты.</p>
+  <input type="text" placeholder="Emailアドレス">
+  <p>パスワード:пароль</p>
+  <input type="password" placeholder="パスワード">
+  <br>
+  <br>
+  <input type="submit" value="送信:Отправить">
+</div>
+<div class="login-modal">
+  <h4>ログイン</h4>
+  <p>Emailアドレス:адрес электронной почты.</p>
+  <input type="text" placeholder="Emailアドレス">
+  <p>パスワード:пароль</p>
+  <input type="password" placeholder="パスワード">
+  <br>
+  <br>
+  <input type="submit" value="送信:Отправить">
+</div>
+<div id="modal-bg">
+</div>
+<script type="text/javascript" src="./test.js"></script>
 </body>
+</html>

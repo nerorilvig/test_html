@@ -1,13 +1,177 @@
 body{
+  margin:0;
   text-align:center;
-  background-color:rgba(125,125,125,0.5);
 }
 header{
-  position:fix;
+  position:fixed;
   top:0;
-  color:red;
+  width:100%;
+  height:90px;
+  background-color:rgba(34,49,52,0.5);
+  z-index:10;
+}
+header li{
+  opacity:0.8;
+  display:inline;
+  float:left;
+  margin:0 3px;
+  transition:0.3s;
+  height:10px;
+  cursor:pointer;
+}
+header li:hover{
+  opacity:1.0;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+.container{
+  padding: 0 15px;
+  margin:0 auto;
+  width:1170px;
+  /*ページサイズに対して表示内容の幅を1170pxに固定する為の記述*/
+}
+.header-left{
+  float:left;
+  display: flex;
+}
+.header-left h4{
+  line-height:50px;
+  display:inline-block;
+  color:white;
+}
+.header-right {
+  /*inline-blockにしないとヘッダの下に表示されるので注意*/
+  float:right;
+  display:inline-block;
+  line-height:90px;
+  color:white;
+}
+.logo img{
+  width:80px;
+  margin-top:20px;
 }
 .main{
   color:blue;
 }
+.top{
+  /*topに中身がないと表示がおかしくなるのでpaddingを入れておく*/
+  width:100%;
+  background-image:url("./img/moscow_new.jpg");
+  background-size:cover;
+  text-align:center;
+  padding-top:200px;
+  padding-bottom:100px;
+  position:relative;
+  margin-bottom:0px;
+}
+.top h1{
+  letter-spacing:5px;
+  text-shadow: 3px 3px 3px white;
+  /*text-shadowで画像上の文字を見易くする*/
+}
+.copyright{
+  float:right;
+  position:absolute;
+  right:0;
+  bottom:0;
+  color:white;
+  background-color:rgba(50,70,50,0.5);
+}
+.contents-wrapper{
+  padding-top:80px;
+  background-color:#f7f7f7;
+  height:700px;
+}
+.contents{
+  /*親クラスのcontainerに対して幅100%にしておく*/
+  margin:50px auto;
+  width:100%;
+}
+.content{
+  /*親クラスのcontentsに対して幅25%にし、横並びで4つ置く*/
+  width:25%;
+  display:inline-block;
+  float:left;
+}
+.content-logo img{
+  width:200px;
+}
+.content-message{
+  width:70%;
+  display:inline-block;
+  font-size:12px;
+} 
+.btn{
+  transition:0.5s;
+  color:white;
+  background-color:rgba(70,180,70);
+  opacity:0.7;
+  padding:8px 15px;
+  border-radius:4px;
+  cursor:pointer;
+}
+.btn:hover{
+  opacity:1.0;
+}
+.signup{
+  background-color:rgba(30,180,180,0.9);
+}
+.signup-click{
+}
+.login{
+  background-color:rgba(30,30,160,0.9);
+}
+.login-click{
+}
+.signup-modal,.login-modal{
+  background-color:white;
+  border:2px solid rgba(50,50,50,0.8);
+  border-radius:20px;
+  display:none;
+  z-index:20;
+  position:fixed;
+  width:400px;
+  height:300px;
+  top:40%;
+  left:40%;
+}
+.login-modal{
+  z-index:21;
+}
+#modal-bg{
+  display:none;
+  z-index:15;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  background-color:rgba(0,0,0,0.4);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:19;
+}
 
+footer{
+  height:120px;
+}
+.footer-right{
+  display:inline-block;
+  float:right;
+}
+.footer-left{
+  display:flex;
+  float:left;
+  margin-top:30px;
+}
+.footer-left img{
+  width:90px;
+}
+.footer-left h4{
+  float:left;
+  display:inline-block;
+}

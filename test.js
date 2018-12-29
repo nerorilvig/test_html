@@ -1,0 +1,15 @@
+$(function(){
+  $('.signup-click').click(function(){
+    $('.signup-modal').fadeIn();
+    $('#modal-bg').fadeIn();
+  });
+  $('#modal-bg').click(function(){
+    $('.signup-modal').fadeOut();
+    $('.login-modal').fadeOut();
+    $(this).fadeOut();
+  });
+  $('.login-click').click(function(){
+    $('.login-modal').fadeIn();
+    $('#modal-bg').fadeIn();
+  });
+});
