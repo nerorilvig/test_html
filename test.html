@@ -5,7 +5,7 @@
   <title>SamplePage</title>
   <link rel="stylesheet" href="./test.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -14,7 +14,7 @@
         <div class="logo">
           <img src="http://www.civillink.net/sozai/images/pics2664.gif">
         </div>
-        <h4>ロシア語学習サポート</h4>
+        <a>ロシア語学習サポート</a>
       </div>
       <div class="header-right">
         <ul>
@@ -94,15 +94,15 @@
     </div>
     <div class="footer-right">
       <ul>
-        <li>Подписаться</li>
-        <li>авторизоваться</li>
+        <li class="signup-click">Подписаться</li>
+        <li class="login-click">авторизоваться</li>
         <li>связаться с нами</li>
       </ul>
     </div>
   </div>
 </footer>
-<div class="signup-modal">
-  <h4>新規登録</h4>
+<div class="modal signup-modal">
+  <h4>新規登録:Подписаться</h4>
   <p>Emailアドレス:адрес электронной почты.</p>
   <input type="text" placeholder="Emailアドレス">
   <p>パスワード:пароль</p>
@@ -111,15 +111,15 @@
   <br>
   <input type="submit" value="送信:Отправить">
 </div>
-<div class="login-modal">
-  <h4>ログイン</h4>
+<div class="modal login-modal">
+  <h4>ログイン:авторизоваться</h4>
   <p>Emailアドレス:адрес электронной почты.</p>
   <input type="text" placeholder="Emailアドレス">
   <p>パスワード:пароль</p>
   <input type="password" placeholder="パスワード">
   <br>
   <br>
-  <input type="submit" value="送信:Отправить">
+  <input type="submit" value="ログイン:авторизоваться">
 </div>
 <div id="modal-bg">
 </div>

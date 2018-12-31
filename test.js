@@ -3,13 +3,15 @@ $(function(){
     $('.signup-modal').fadeIn();
     $('#modal-bg').fadeIn();
   });
-  $('#modal-bg').click(function(){
-    $('.signup-modal').fadeOut();
-    $('.login-modal').fadeOut();
-    $(this).fadeOut();
-  });
   $('.login-click').click(function(){
     $('.login-modal').fadeIn();
-    $('#modal-bg').fadeIn();
+    $('#modal-bg').fadeIn()
+  });
+  $('#modal-bg').click(function(){
+    $(this).fadeOut();
+    $('.modal').fadeOut();
+  });
+  $('.header-left a').click(function(){
+    $('html,body').animate({scrollTop:0},500);
   });
 });
