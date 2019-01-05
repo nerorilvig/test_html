@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./test.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./src/default.css">
 </head>
 <body>
   <div id="upper"></div>
@@ -20,7 +21,7 @@
         <p>ロシア語学習の第一歩として、<span class="emphasis">キリル文字の形と発音</span>を覚えましょう</p>
         <figure style="position:absolute;right:60px;bottom:0;width:50%;">
           <img src="./img/cyr_map.png" style="width:100%">
-          <figcaption style="color:white">キリル文字の使用地域。これらの国の言葉も読めるようになるかもしれませんよ</figcaption>
+          <figcaption style="color:white">キリル文字の使用地域。キリル文字を覚えると、<br>これらの国の言葉も読めるようになるかもしれませんよ</figcaption>
         </figure>
       </div>
     </div>
@@ -28,13 +29,47 @@
   <div class="slideDown_menus">
     <div class="container">
       <div class="menu_heading">
-        <h2>レッスン名をクリックするとモーダルが開きます</h2>
+        <h2>トピックをクリックするとレッスンリストが開きます</h2>
       </div>
-      <div id="">
-        
+      <div class="open_topic" id="open_topic1">
+        <i class="fa fa-plus-square"></i>
+        <a>トピック1:まずは形と読み方を覚えよう!</a>
+      </div>
+      <div id="topic1" class="topic">
+        <ul>
+          <li><a id="lesson1-1">レッスン1:軟母音について知ろう</a></li>
+          <li><a id="lesson1-2">レッスン2:硬母音について知ろう</a></li>
+          <li><a id="lesson1-3">レッスン3:軟子音について知ろう</a></li>
+          <li><a id="lesson1-4">レッスン4:硬子音について知ろう</a></li>
+          <li><a id="lesson1-5">レッスン5:硬音記号・軟音記号</a></li>
+          <li><a id="lesson1-6">復習編:地名の読み方わかるかな?</a></li>
+        </ul>
+      </div>
+      <div class="open_topic" id="open_topic2">
+         <i class="fa fa-plus-square"></i>
+         <a>トピック2:発音の変化を覚えよう</a>
+      </div>
+      <div id="topic2" class="topic">
+         <ul>
+           <li><a id="lesson2-1">レッスン1:アクセントで変化する母音の発音</a></li>
+           <li><a id="lesson2-2">レッスン2:子音の硬音化・軟音化</a></li>
+           <li><a id="lesson2-3">復習編:単語の読み方わかるかな？</a></li>
+         </ul>
+      </div>
+      <div class="open_topic" id="open_topic3">
+         <i class="fa fa-plus-square"></i>
+         <a>トピック3</a>
+      </div>
+      <div id="topic3" class="topic">
+         <ul>
+          <li><a id="lesson3-1">参考:ローマ字⇔キリル文字対応表</a></li>
+          <li><a id="lesson3-2">ローマ字→キリル文字変換ツール</a></li>
+          <li><a id="lesson3-3"></a></li>
+        </ul>
       </div>
     </div>
   </div>
   <div id="lower"></div>
   <script type="text/javascript" src="./cyrillic.js"></script>
+  <script type="text/javascript" src="./src/basic_contents.js"></script>
 </body>
