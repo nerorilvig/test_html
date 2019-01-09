@@ -1,0 +1,60 @@
+.slide-mod{
+  /*レッスンで表示するスライド*/
+//  background-color:rgba(220,220,255,0.9);
+//  border:2px solid rgba(50,50,50,0.8);
+//  z-index:20;
+//  position:absolute;
+//  width:80%;
+//  height:80%;
+//  top:10%;
+//  left:10%;
+//  display:none;
+  position:fixed;
+  top:10%;
+  left:10%;
+  display:none;
+  width:80%;
+  height:80%;
+  z-index:20;
+}
+.slides{
+  background: linear-gradient(to right, #74ebd5, #acb6e5); 
+  border:2px solid rgba(50,50,50,0.8);
+  height:90%;
+  //max-width:1400px;
+  //min-width:800px;
+  display:none;
+}
+.activate{
+  display:block;
+}
+.slide-contents{
+  border:2px solid rgb(50,50,50);
+  height:100%;
+}
+.slide-contents h1,h2,h3,a,p{
+  color:rgb(60,60,50);
+  z-index:21;
+}
+.page-no{
+  display:inline;
+  position:absolute;
+  bottom:10%;
+  font-size:16px;
+  font-weight:bold;
+}
+#index{
+  display:none;
+  margin:10px 0px;
+}
+.index-btn{
+  border-radius:3px;
+  display:inline-block;
+  background-color:#e0f5ff;
+  color:#4e90af;
+  font-size:30px;
+  padding:10px;
+  margin:10px 5px;
+  cursor:pointer;
+  width:45px;
+}

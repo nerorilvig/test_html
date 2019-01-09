@@ -1,0 +1,23 @@
+$(function(){
+  $("#cyr1-1").load("./slides/cyr1-1.html");
+  $('.topic').find('a').click(function(){
+    $('#modal-bg').fadeIn(); 
+  }); 
+  $('#modal-bg').click(function(){
+    $('#modal-bg').fadeOut();
+    $(".slide-mod").fadeOut();
+    $(".activate").removeClass("activate");
+  });
+  $("#lesson1-1").click(function(){
+    $(".slide-mod").fadeIn();
+    $("#index").fadeIn();
+    $("#slide1-1p1").addClass("activate");
+  });
+  $(document).on('click','.index-btn',function(){
+    //jQueryで後から読み込んだ要素にクリックイベントを入れるには$(document),onを使う
+    //test
+    $(".activate").removeClass("activate");
+    var clickedIndex=$('.index-btn').index($(this));
+    $(".slides").eq(clickedIndex).addClass("activate");
+  });
+});

@@ -32,11 +32,11 @@
       <div class="menu_heading">
         <h2>トピックをクリックするとレッスンリストが開きます</h2>
       </div>
-      <div class="open_topic">
+      <div class="open_topic" id="open_topic1">
         <i class="fa fa-plus-square"></i>
         <a>トピック1:まずは形と読み方を覚えよう!</a>
       </div>
-      <div class="topic">
+      <div id="topic1" class="topic">
         <ul>
           <li><a id="lesson1-1">レッスン1:軟母音について知ろう</a></li>
           <li><a id="lesson1-2">レッスン2:硬母音について知ろう</a></li>
@@ -46,22 +46,22 @@
           <li><a id="lesson1-6">復習編:地名の読み方わかるかな?</a></li>
         </ul>
       </div>
-      <div class="open_topic">
+      <div class="open_topic" id="open_topic2">
          <i class="fa fa-plus-square"></i>
          <a>トピック2:発音の変化を覚えよう</a>
       </div>
-      <div class="topic">
+      <div id="topic2" class="topic">
          <ul>
            <li><a id="lesson2-1">レッスン1:アクセントで変化する母音の発音</a></li>
            <li><a id="lesson2-2">レッスン2:子音の硬音化・軟音化</a></li>
            <li><a id="lesson2-3">復習編:単語の読み方わかるかな？</a></li>
          </ul>
       </div>
-      <div class="open_topic">
+      <div class="open_topic" id="open_topic3">
          <i class="fa fa-plus-square"></i>
          <a>トピック3</a>
       </div>
-      <div class="topic">
+      <div id="topic3" class="topic">
          <ul>
           <li><a id="lesson3-1">参考:ローマ字⇔キリル文字対応表</a></li>
           <li><a id="lesson3-2">ローマ字→キリル文字変換ツール</a></li>
@@ -72,26 +72,25 @@
   </div>
   <div id="lower"></div>
   <div id="modal-bg"></div>
-  <div id="slide-load">
+  <div id="slide-load"></div>
   <!--スライド用ファイル読み込み(jQueryで実装)-->
-  <!--レッスンスライドを追加したら以下に記述すること-->
   <!--Topic1-->
-    <div id="cyr1-1"></div>
-    <div id="cyr1-1"></div>
-    <div id="cyr1-2"></div>
-    <div id="cyr1-3"></div>
-    <div id="cyr1-4"></div>
-    <div id="cyr1-5"></div>
-    <div id="cyr1-6"></div>
-    <div id="cyr2-1"></div>
-    <div id="cyr2-2"></div>
-    <div id="cyr2-3"></div>
-    <div id="cyr3-1"></div>
-    <div id="cyr3-2"></div>
-    <div id="cyr3-3"></div>
-  </div>
-  
-  <script type="text/javascript" src="./script/cyrillic.js"></script>
-  <script type="text/javascript" src="./script/basic_contents.js"></script>
-  <script type="text/javascript" src="./script/contents.js"></script>
+  <!-- Slideを関数で読み込む機能実装のためコメントアウト
+  <div id="cyr1-1"></div>
+  <div id="cyr1-2"></div>
+  <div id="cyr1-3"></div>
+  <div id="cyr1-4"></div>
+  <div id="cyr1-5"></div>
+  <div id="cyr1-6"></div>
+  <div id="cyr2-1"></div>
+  <div id="cyr2-2"></div>
+  <div id="cyr2-3"></div>
+  <div id="cyr3-1"></div>
+  <div id="cyr3-2"></div>
+  <div id="cyr3-3"></div>
+  -->
+  <!--ファイル指定ここまで-->
+  <script type="text/javascript" src="./cyrillic.js"></script>
+  <script type="text/javascript" src="./src/basic_contents.js"></script>
+  <script type="text/javascript" src="./slides/showSlide.js"></script>
 </body>

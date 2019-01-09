@@ -242,19 +242,6 @@ footer{
   color:white;
   font-size:24px;
 }
-.slides{
-  /*レッスンで表示するスライド*/
-  background-color:rgba(220,220,255,0.9);
-  border:2px solid rgba(50,50,50,0.8);
-  border-radius:20px;
-  display:none;
-  z-index:20;
-  position:fixed;
-  width:800px;
-  height:500px;
-  top:40%;
-  left:40%;
-}
 .emphasis{
   background-color:rgb(220,80,80);
   font-weight:bold;
